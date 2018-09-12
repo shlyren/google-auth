@@ -3,7 +3,7 @@ const notp = require("./otp");
 
 var totp = {};
 
-totp.verify = function(code,key){
+totp.verify = function(code, key){
     var flg = notp.totp.verify(code, key, {});
     var delta = -1;
     if(flg){
